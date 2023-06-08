@@ -1,0 +1,7 @@
+{
+  "name": "ru.nikitazyz.super-rename",
+  "description": "This plugin offers a range of features for renaming, including the ability to use regular expressions and customize various settings. It allows you to rename multiple objects and define complex renaming patterns. You can see the rename results before saving them.",
+  "version": "0.1.0",
+  "displayName": "Super Rename",
+  "type": "tool"
+}

@@ -1,0 +1,29 @@
+.settings-label {
+    margin-bottom: 5px;
+    -unity-font-style: bold;
+}
+
+.selected-objects-item {
+    flex-direction: row;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.selected-objects-item Label {
+    flex-grow: 1;
+    width: 50%;
+    align-self: center;
+}
+
+.warning-image {
+    min-width: 16px;
+    margin: 0 2px;
+    --unity-image: url('project://database/Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/status-warning-dark.png?fileID=2800000&guid=c2d8bb87691276f4d93f1b74330d1d90&type=3#status-warning-dark');
+}
+
+.warning-panel {
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin: 0 4px;
+    margin-top: 5px;
+}

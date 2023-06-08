@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/ru.nikitazyz.super-rename/Editor/SuperRenameWindow.uss?fileID=7433441132597879392&amp;guid=7daf130834be8d049b9a3d07083cf2fd&amp;type=3#SuperRenameWindow" />
+    <ui:VisualElement name="SettingsPanel" style="margin-top: 4px; margin-left: 4px; margin-right: 4px;">
+        <ui:Label text="Pattern" display-tooltip-when-elided="true" class="settings-label" />
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:TextField picking-mode="Ignore" name="Pattern" style="flex-grow: 1;" />
+            <ui:Image class="warning-image" tooltip="something" 
+                      name="WarningImage"/>
+
+        </ui:VisualElement>
+        <ui:VisualElement style="margin-top: 4px;">
+            <ui:Toggle label="Use Regular Expression" name="Regex" />
+            <ui:Toggle label="Case Sensitive" name="CaseSens" />
+            <ui:Toggle label="Match all occurrences" name="MatchAll" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="RenamePanel" style="margin-top: 20px; margin-left: 4px; margin-right: 4px;">
+        <ui:Label text="Rename" display-tooltip-when-elided="true" class="settings-label" />
+        <ui:TextField picking-mode="Ignore" name="Rename" />
+    </ui:VisualElement>
+    <ui:Label text="Nothing to rename. Select objects." display-tooltip-when-elided="true" name="NoSelected" style="-unity-text-align: upper-center; margin-top: 5px;" />
+    <ui:ListView focusable="true" name="RenameList" selection-type="None" show-alternating-row-backgrounds="ContentOnly" fixed-item-height="22" style="flex-grow: 1; margin-top: 10px;" />
+    <ui:Button text="Apply" name="ApplyButton" style="margin-bottom: 6px; margin-top: 4px;" />
+</ui:UXML>
